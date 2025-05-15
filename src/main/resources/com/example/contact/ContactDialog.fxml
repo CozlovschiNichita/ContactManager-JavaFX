@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.contact.controller.ContactDialog">
+
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <hgap>10</hgap><vgap>10</vgap>
+
+    <Label text="Имя:"        GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="name"   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Телефон:"    GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="phone"  GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="E-mail:"     GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="email"  GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label     text="Компания:"   GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="company"    GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Label     text="Должность:"  GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="position"   GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+</GridPane>

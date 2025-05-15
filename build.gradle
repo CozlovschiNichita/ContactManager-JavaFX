@@ -1,0 +1,29 @@
+plugins {
+    id 'java'                                // компиляция .java
+    id 'application'                         // задача run { }
+    id 'org.openjfx.javafxplugin' version '0.1.0' // добавляет JavaFX на class- и module-path
+}
+
+repositories {
+    mavenCentral()                           // здесь лежат JAR-файлы OpenJFX 22
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(17) } // берём JDK-17 из toolchain
+}
+
+dependencies {
+    implementation "org.openjfx:javafx-controls:22"
+    implementation "org.openjfx:javafx-fxml:22"
+}
+
+javafx {
+    version = "22"
+    // какие модули нужны приложению – ровно по импортам
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+application {
+    // путь к вашему главному классу
+    mainClass = 'com.example.contact.MainApp'
+}

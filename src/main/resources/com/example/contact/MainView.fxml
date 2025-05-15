@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.contact.controller.MainController"
+            stylesheets="@ios.css">
+
+    <!-- ───────── «Навбар» с кнопками ───────── -->
+    <top>
+        <VBox spacing="4">
+            <!-- Верхняя полоса как в iOS -->
+            <ToolBar id="nav">
+                <Label text="Контакты" styleClass="title"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <Button text="+" onAction="#onAdd" styleClass="mini-btn"/>
+            </ToolBar>
+
+            <!-- Поисковая строка -->
+            <HBox spacing="6">
+                <padding>
+                    <Insets top="6" right="6" bottom="6" left="6"/>
+                </padding>
+                <TextField fx:id="searchField" promptText="Поиск" HBox.hgrow="ALWAYS"
+                           styleClass="search"/>
+                <Button text="Отменить" onAction="#onSearchClear"
+                        styleClass="cancel-btn"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- ─────────── Таблица контактов ────────── -->
+    <center>
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn text="Имя"       fx:id="nameCol"     prefWidth="160"/>
+                <TableColumn text="Телефон"   fx:id="phoneCol"    prefWidth="120"/>
+                <TableColumn text="E-mail"    fx:id="emailCol"    prefWidth="160"/>
+                <TableColumn text="Компания"  fx:id="companyCol"  prefWidth="120"/>
+                <TableColumn text="Должн."    fx:id="positionCol" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <!-- ─────────── Нижняя панель действий ───── -->
+    <bottom>
+        <ToolBar id="actions">
+            <Button text="Редактировать" onAction="#onEdit"/>
+            <Button text="Удалить"       onAction="#onDelete"/>
+        </ToolBar>
+    </bottom>
+</BorderPane>

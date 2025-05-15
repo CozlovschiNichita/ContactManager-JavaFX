@@ -1,0 +1,82 @@
+/* ===== Навбар ===== */
+#nav {
+    background-color: #e9e9e9; /* для совместимости */
+    -fx-background-color: linear-gradient(to bottom, #f9f9f9 0%, #e9e9e9 100%);
+    padding: 6px 10px; /* для совместимости */
+    -fx-padding: 6 10 6 10;
+    border-color: #d0d0d0; /* для совместимости */
+    -fx-border-color: #d0d0d0;
+    border-width: 0 0 1px 0; /* для совместимости */
+    -fx-border-width: 0 0 1 0;
+}
+#nav .title {
+    font-size: 18px; /* для совместимости */
+    -fx-font-size: 18px;
+    font-weight: bold; /* для совместимости */
+    -fx-font-weight: bold;
+}
+
+.mini-btn {
+    font-size: 18px;
+    -fx-font-size: 18px;
+    color: #007aff;
+    -fx-text-fill: #007aff;
+    background-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.search {
+    background-color: #f1f1f1;
+    -fx-background-color: #f1f1f1;
+    border-color: transparent;
+    -fx-border-color: transparent;
+    padding: 4px 8px 4px 28px;
+    -fx-padding: 4 8 4 28;
+    -fx-background-radius: 10;
+    -fx-prompt-text-fill: #8e8e93;
+}
+
+.cancel-btn {
+    color: #007aff;
+    -fx-text-fill: #007aff;
+    background-color: transparent;
+    -fx-background-color: transparent;
+}
+
+/* ===== Таблица ===== */
+.table-view {
+    background-color: white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: transparent;
+}
+.table-view:focused {
+    background-color: white;
+    -fx-background-color: white;
+}
+.table-row-cell:filled:selected,
+.table-row-cell:filled:selected:hover {
+    background-color: #dbe7ff;
+    -fx-background-color: #dbe7ff;
+}
+.table-row-cell:hover {
+    background-color: #f5f5f5;
+    -fx-background-color: #f5f5f5;
+}
+
+/* ===== Кнопки нижней панели ===== */
+#actions {
+    background-color: #fbfbfb;
+    -fx-background-color: #fbfbfb;
+    border-color: #d0d0d0;
+    -fx-border-color: #d0d0d0;
+    border-width: 1px 0 0 0;
+    -fx-border-width: 1 0 0 0;
+}
+#actions .button {
+    background-color: transparent;
+    -fx-background-color: transparent;
+    color: #007aff;
+    -fx-text-fill: #007aff;
+    font-weight: bold;
+    -fx-font-weight: bold;
+}
