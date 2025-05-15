@@ -1,4 +1,4 @@
-# ContactManager-JavaFX
+# 📊 ContactManager-JavaFX
 Desktop application for managing personal and business contacts, built with Java and JavaFX. Includes contact filtering, validation, and custom exception handling.
 
 # ContactManager-JavaFX
@@ -30,3 +30,9 @@ Desktop application for managing personal and business contacts, built with Java
 ![Поиск контакта по номеру телефона](IMG/image3.png)
 ![](IMG/image4.png)
 ![Удалить пользователя](IMG/image5.png)
+
+## Автор
+
+Проект создан в рамках учебной дисциплины по объектно-ориентированному программированию на Java.
+  
+[GitHub профайл](https://github.com/CozlovschiNichita)
