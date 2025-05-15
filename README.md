@@ -24,8 +24,9 @@ Desktop application for managing personal and business contacts, built with Java
 - FXML, TableView, контроллеры в JavaFX
 
 ## Скриншоты
-![alt text](IMG/image copy.png)
-![alt text](IMG/image copy2.png)
-![alt text](IMG/image copy3.png)
-![alt text](IMG/image copy4.png)
-![alt text](IMG/image copy5.png)
+![Главное окно](IMG/imageMain.png)
+![Форма редактирования](IMG/image1.png)
+![Создать нового](IMG/image2.png)
+![Поиск контакта по номеру телефона](IMG/image3.png)
+![](IMG/image4.png)
+![Удалить пользователя](IMG/image5.png)
